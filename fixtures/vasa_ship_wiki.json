@@ -1,0 +1,27 @@
+{
+  "_generated_by": "gemini-ultra",
+  "_fixture_notice": "SYNTHETIC NON-TRAINING TEST FIXTURE. Short factual summary snapshot under CC BY-SA 4.0 for offline citation-offset unit tests only. Never use for model training.",
+  "slug": "vasa-ship",
+  "title": "Vasa (ship)",
+  "page_url": "https://en.wikipedia.org/wiki/Vasa_(ship)",
+  "revision_id": 1253884105,
+  "retrieved_at": "2026-11-01T12:05:00Z",
+  "license": "CC BY-SA 4.0",
+  "sections": [
+    {
+      "anchor": "Construction_and_armament",
+      "paragraphs": [
+        "Vasa was a Swedish warship built between 1626 and 1628 on the orders of King Gustavus Adolphus, who demanded heavier firepower partway through construction.",
+        "Shipwrights fitted 64 bronze cannons across 2 enclosed gun decks, leaving the tall hull dangerously top-heavy with insufficient stone ballast below the waterline."
+      ]
+    },
+    {
+      "anchor": "Maiden_voyage_and_salvage",
+      "paragraphs": [
+        "On 10 August 1628, Vasa departed Stockholm harbor on her maiden voyage with lower gunports propped open to fire a ceremonial salute.",
+        "After sailing roughly 1,300 meters, a light gust heeled the ship to port, seawater flooded the open lower gunports, and Vasa sank in 32 meters of water with 30 lives lost.",
+        "Protected from shipworms by the cold brackish Baltic Sea, Vasa was raised largely intact in 1961 after 333 years on the seabed."
+      ]
+    }
+  ]
+}

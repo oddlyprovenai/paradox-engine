@@ -1,0 +1,38 @@
+# generated-by: gemini-ultra
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oddly-paradox-engine"
+version = "0.1.0"
+description = "Source-grounded historical paradox claim verifier, mandatory human-review gate, and oddly-shorts 9:16 bundle exporter."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "Oddly Proven", email = "noreply@oddlyproven.local" }
+]
+keywords = ["wikipedia", "fact-checking", "shorts", "remotion", "oddly-shorts", "provenance"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+]
+dependencies = []
+
+[project.scripts]
+paradox = "paradox_engine.cli:main"
+paradox-engine = "paradox_engine.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

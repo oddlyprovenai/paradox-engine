@@ -1,0 +1,27 @@
+{
+  "_generated_by": "gemini-ultra",
+  "_fixture_notice": "SYNTHETIC NON-TRAINING TEST FIXTURE. Short factual summary snapshot under CC BY-SA 4.0 for offline citation-offset unit tests only. Never use for model training.",
+  "slug": "cobra-effect",
+  "title": "Perverse incentive",
+  "page_url": "https://en.wikipedia.org/wiki/Perverse_incentive",
+  "revision_id": 1254091820,
+  "retrieved_at": "2026-11-01T12:00:00Z",
+  "license": "CC BY-SA 4.0",
+  "sections": [
+    {
+      "anchor": "The_original_cobra_effect",
+      "paragraphs": [
+        "Economist Horst Siebert coined the term cobra effect in 2001 to illustrate how an ill-designed incentive can worsen the exact problem it aimed to solve.",
+        "According to the colonial Delhi anecdote, British administrators worried about venomous cobras offered a cash bounty for every dead cobra brought to government offices. At first street sightings dropped, yet enterprising residents soon began breeding cobras in hidden pens solely to claim the recurring bounty.",
+        "Once officials discovered the secret farms and scrapped the reward program, captive snakes immediately dropped to 0 market value, so breeders released them into the streets and left Delhi with more wild cobras than before."
+      ]
+    },
+    {
+      "anchor": "The_great_Hanoi_rat_massacre",
+      "paragraphs": [
+        "A documented archival case unfolded in 1902 in Hanoi, where French colonial officials paid 1 cent for each severed rat tail delivered to municipal clerks.",
+        "On a single day in June 1902, collectors delivered 20,112 rat tails, while health inspectors spotted healthy tailless rats roaming Hanoi sewers because hunters released live rats so they would breed future bounties."
+      ]
+    }
+  ]
+}
