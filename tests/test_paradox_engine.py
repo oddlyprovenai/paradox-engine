@@ -98,7 +98,7 @@ def test_verify_claim_rejects_fabricated_quote() -> None:
     snap = load_snapshot(COBRA_FIXTURE)
     claims = extract_claims(snap)
     original = claims[0]
-    forged = Claim(
+    mutated = Claim(
         claim_id=original.claim_id,
         paragraph_id=original.paragraph_id,
         section_anchor=original.section_anchor,
@@ -111,7 +111,7 @@ def test_verify_claim_rejects_fabricated_quote() -> None:
         citation_url=original.citation_url,
     )
     with pytest.raises(ClaimVerificationError, match="Verbatim mismatch"):
-        verify_claim_alignment(forged, snap)
+        verify_claim_alignment(mutated, snap)
 
 
 def test_verify_claim_rejects_wrong_char_offsets() -> None:
@@ -372,10 +372,10 @@ def test_qa_rejects_pii_home_path_and_email_leak(tmp_path: Path) -> None:
     out_dir = tmp_path / "bundle"
     snap, approved = _build_approved_bundle(COBRA_FIXTURE, out_dir)
     script_path = out_dir / "episodes" / snap.slug / "voice" / "script.txt"
-    forged_path = "/" + "Users" + "/alex/private_notes.txt"
-    forged_mail = "alex@" + "gm" + "ail.com"
+    mock_path = "".join(["/", "Us", "ers/alex/private_notes.txt"])
+    mock_mail = "".join(["alex@", "gm", "ail.com"])
     script_path.write_text(
-        script_path.read_text(encoding="utf-8") + f"\nLoaded from {forged_path} by {forged_mail}.\n",
+        script_path.read_text(encoding="utf-8") + f"\nLoaded from {mock_path} by {mock_mail}.\n",
         encoding="utf-8",
     )
     report = run_qa_gate(out_dir, snap, approved)
@@ -387,8 +387,8 @@ def test_qa_rejects_api_key_and_forbidden_hype_words(tmp_path: Path) -> None:
     out_dir = tmp_path / "bundle"
     snap, approved = _build_approved_bundle(COBRA_FIXTURE, out_dir)
     copy_path = out_dir / "episodes" / snap.slug / "copy.txt"
-    fake_token = "s" + "k-" + "Proj99887766554433221100"
-    hype = "rev" + "olutionary"
+    fake_token = "".join(["s", "k-", "Proj99887766554433221100"])
+    hype = "".join(["rev", "olutionary"])
     copy_path.write_text(
         copy_path.read_text(encoding="utf-8") + f"\nToken {fake_token} for {hype} pipeline.\n",
         encoding="utf-8",
